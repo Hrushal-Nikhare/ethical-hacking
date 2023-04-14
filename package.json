@@ -11,6 +11,10 @@
   },
   "dependencies": {
     "@astropub/icons": "^0.2.0",
-    "astro": "^2.2.0"
+    "@swup/overlay-theme": "^1.1.1",
+    "@swup/preload-plugin": "^2.1.0",
+    "@swup/slide-theme": "^1.0.5",
+    "astro": "^2.2.0",
+    "swup": "^3.0.6"
   }
 }
