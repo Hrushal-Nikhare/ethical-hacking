@@ -1,0 +1,165 @@
+---
+import "../styles/reset.css";
+import * as Icon from "@astropub/icons";
+---
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Kavivanar&display=swap");
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid black;
+  }
+  .hamburger-menu {
+    padding: 25px;
+  }
+  .question-mark {
+    padding: 25px;
+  }
+  nav > h1 {
+    font-family: Kavivanar;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 95px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    /* background-color: #fff; */
+    /* border: 1px solid black; */
+    transform: translateX(-100%);
+  }
+
+  .slide-in-left {
+    transform: translateX(0);
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .sidebar > .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid black;
+  }
+
+  .buffer {
+  position: fixed;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  transform: translateX(0);
+  display: none;
+}
+
+
+  .slide-in-left {
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+  }
+  /* add slide in and slide out */
+  .sidebar a {
+    font-size: 1.75rem;
+    color: black;
+    padding-bottom: 20px;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidebar a:hover {
+    color: #555555;
+  }
+  .cross {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 25px;
+  }
+  .cross:hover {
+    cursor: pointer;
+  }
+  .hamburger-menu:hover {
+    cursor: pointer;
+  }
+  .question-mark:hover {
+    cursor: pointer;
+  }
+  .anchor_group {
+    padding: 50px;
+    padding-top: 100px;
+  }
+  .display {
+    display: block;
+  }
+</style>
+
+<nav>
+  <!-- Hamburger menu -->
+  <div class="hamburger-menu">
+    <Icon.HamburgerMenu size="25" />
+  </div>
+  <!-- Hamburger menu -->
+  <h1>EH</h1>
+  <!-- Question mark -->
+  <div class="question-mark">
+    <Icon.QuestionMarkCircled size="25" />
+  </div>
+</nav>
+<div class="sidebar" id="sidebar">
+  <div class="navigation">
+    <div class="cross">
+      <Icon.Cross1 size="25" />
+    </div>
+    <div class="anchor_group">
+      <a href="">Like i Care</a>
+      <a href="">Like i Care</a>
+      <a href="">Like i Care</a>
+      <a href="">Like i Care</a>
+      <a href="">Like i Care</a>
+      <a href="">Like i Care</a>
+    </div>
+  </div>
+  
+</div>
+<div class="buffer"></div>
+
+<script>
+  const hamburgerMenu = document.querySelector(".hamburger-menu");
+  const sidebar = document.querySelector("#sidebar");
+  const cross = document.querySelector(".cross");
+    const buffer = document.querySelector(".buffer");
+
+  hamburgerMenu.addEventListener("click", () => {
+    
+    sidebar.classList.toggle("slide-in-left");
+    buffer.style.display = "block";
+  });
+
+  cross.addEventListener("click", () => {
+    sidebar.classList.toggle("slide-in-left");
+    buffer.style.display = "none";
+  });
+</script>
