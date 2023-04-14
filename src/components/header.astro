@@ -55,7 +55,12 @@ import * as Icon from "@astropub/icons";
     background-color: #fff;
     border: 1px solid black;
   }
-
+  /* on non desktop devices make it 50% */
+  @media only screen and (max-width: 600px) {
+    .sidebar > .navigation {
+      width: 50%;
+    }
+  }
   .buffer {
   position: fixed;
   top: 0;
