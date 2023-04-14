@@ -1,7 +1,7 @@
 {
   "name": "ethical-hacking",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@astropub/icons": "^0.2.0",
-    "@swup/overlay-theme": "^1.1.1",
     "@swup/preload-plugin": "^2.1.0",
     "@swup/slide-theme": "^1.0.5",
     "astro": "^2.2.0",
