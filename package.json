@@ -16,6 +16,7 @@
     "@swup/preload-plugin": "^2.1.0",
     "@swup/scripts-plugin": "^1.1.0",
     "@swup/slide-theme": "^1.0.5",
+    "@vercel/analytics": "^0.1.11",
     "astro": "^2.2.0",
     "swup": "^3.0.6"
   }
