@@ -1,0 +1,52 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Rounded from "../../components/Rounded.astro";
+import Nextbut from "../../components/nextbut.astro";
+---
+
+<style>
+  .center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  .content {
+    padding: 1rem;
+  }
+</style>
+<Layout title="Browser locker">
+  <Rounded>
+<div class="content">
+
+  <h1>Browser Locker:</h1>
+  <br />
+  <h3>
+  A browser locker is a type of cyber attack where an attacker uses malicious code to lock a user's web browser, making it unusable and displaying a fake warning message or tech support scam. The warning message typically claims that the user's computer is infected with a virus or malware, and provides a phone number or email address for the user to contact for assistance.<br><br>
+  The purpose of a browser locker is to trick users into paying for fake technical support services or purchasing useless software. The attackers may also try to steal personal or financial information from the user by prompting them to enter sensitive information on the fake warning page.<br><br>
+  
+  Browser lockers can be very convincing and difficult to remove, as the attackers often use advanced techniques to prevent the user from closing the browser or navigating away from the warning page. These techniques may include disabling keyboard and mouse input, using pop-up windows or redirects to prevent the user from closing the page, or even changing the browser's settings or homepage.<br><br>
+  
+  To protect against browser locker attacks, users should be cautious when visiting unfamiliar websites or clicking on links from unknown sources. They should also keep their web browser and antivirus software up to date with the latest security patches and updates. If a browser locker is encountered, users should not contact the provided phone number or email address, as this will only further expose them to the attacker. Instead, they should try to close the browser using the task manager or by restarting their computer in safe mode, and then run a full antivirus scan to remove any malicious code.<br><br>
+  
+  </h3>
+
+</div>
+    <br>
+    <div class="center">
+      <Nextbut url="/Common" size="50" />
+    </div>
+    <br>
+  </Rounded>
+</Layout>

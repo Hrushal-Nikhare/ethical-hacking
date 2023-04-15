@@ -1,0 +1,52 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Rounded from "../../components/Rounded.astro";
+import Nextbut from "../../components/nextbut.astro";
+---
+
+<style>
+  .center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  .content {
+    padding: 1rem;
+  }
+</style>
+<Layout title="SQL Injection">
+  <Rounded>
+<div class="content">
+
+  <h1>SQL Injection:</h1>
+  <br />
+  <h3>
+  SQL injection is a type of cyber attack where an attacker manipulates a web application's input parameters in order to inject and execute malicious SQL statements. SQL injection attacks can be very dangerous as they can allow attackers to view, modify, and delete sensitive data in a database, or even take control of the entire application.<br><br>
+  SQL injection attacks work by taking advantage of poorly designed or insecure web applications that do not properly validate or sanitize user input. An attacker can input specially crafted SQL statements into a web application's input fields in order to execute arbitrary SQL commands on the application's database. This can allow them to steal sensitive information, modify or delete data, or even take over the entire application.<br><br>
+  
+  To protect against SQL injection attacks, web developers should follow best practices for secure coding and input validation. This includes using prepared statements or parameterized queries, which separate the SQL statement from the user input and can prevent SQL injection attacks. Developers should also use input validation to ensure that user input conforms to expected formats and values, and sanitize input to remove any potentially dangerous characters or commands.<br><br>
+  
+  Users can also protect themselves against SQL injection attacks by being cautious when entering data into web applications. They should be wary of any unusual behavior or error messages that may indicate a SQL injection attack, and report any suspicious activity to the application owner or administrator. Additionally, users can use web application firewalls (WAFs) or browser extensions that can detect and block SQL injection attacks.<br><br>
+  
+  </h3>
+
+</div>
+    <br>
+    <div class="center">
+      <Nextbut url="/Common" size="50" />
+    </div>
+    <br>
+  </Rounded>
+</Layout>

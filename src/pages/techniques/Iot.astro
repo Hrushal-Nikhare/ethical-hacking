@@ -1,0 +1,71 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Rounded from "../../components/Rounded.astro";
+import Nextbut from "../../components/nextbut.astro";
+---
+
+<style>
+  .center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  .content {
+    padding: 1rem;
+  }
+</style>
+<Layout title="IoT attacks">
+  <Rounded>
+<div class="content">
+
+  <h1>IoT attacks:</h1>
+  <br />
+  <h3>
+      IoT (Internet of Things) devices are becoming increasingly popular and are used in various settings, including homes, businesses, and healthcare facilities. However, these devices are vulnerable to cyber attacks, which can have serious consequences.<br><br>
+  
+      IoT attacks involve exploiting the vulnerabilities in the software and hardware of IoT devices. Once an attacker gains access to an IoT device, they can use it to launch further attacks on other devices on the network or steal sensitive data.<br><br>
+      
+      Some common IoT attacks include:<br>
+      <ul>
+        <li>Botnets: Attackers can use IoT devices to create botnets, which are networks of devices that can be remotely controlled to carry out attacks, such as Distributed Denial of Service (DDoS) attacks.</li>
+        <li>Brute-force attacks: Attackers can use brute-force attacks to guess login credentials and gain access to IoT devices.</li>
+        <li>Eavesdropping attacks: Attackers can intercept and eavesdrop on communication between IoT devices and steal sensitive information, such as passwords and credit card numbers.</li>
+        <li>Malware attacks: Attackers can use malware to infect IoT devices and gain control over them.</li>
+        <li>Man-in-the-middle attacks: Attackers can intercept communication between IoT devices and inject malicious code or steal sensitive information.</li>
+        <li>Physical attacks: Attackers can physically access IoT devices and tamper with them or steal them.</li>
+      </ul><br>
+      
+      To protect against IoT attacks, here are some best practices you can follow:<br>
+      <ol>
+        <li>Change the default login credentials on IoT devices and use strong, unique passwords.</li>
+        <li>Keep IoT device software up-to-date to ensure that any known vulnerabilities are patched.</li>
+        <li>Separate IoT devices from the main network and create a separate network for them.</li>
+        <li>Disable unnecessary features on IoT devices.</li>
+        <li>Monitor IoT device traffic to detect any unusual activity.</li>
+        <li>Consider using a network security solution that is specifically designed for IoT devices.</li>
+      </ol>
+      <br>
+      By following these best practices, you can reduce your risk of falling victim to an IoT attack and protect your sensitive data and devices.
+  </h3>
+  
+
+</div>
+    <br>
+    <div class="center">
+      <Nextbut url="/Common" size="50" />
+    </div>
+    <br>
+  </Rounded>
+</Layout>

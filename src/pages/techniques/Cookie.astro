@@ -1,0 +1,60 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Rounded from "../../components/Rounded.astro";
+import Nextbut from "../../components/nextbut.astro";
+---
+
+<style>
+  .center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  .content {
+    padding: 1rem;
+  }
+</style>
+<Layout title="Cookie Theft">
+  <Rounded>
+<div class="content">
+
+  <h1>Cookie Theft / Sidejacking / Session Hijacking:</h1>
+  <br />
+  <h3>
+      Cookie theft, sidejacking, or session hijacking is a type of attack where an attacker steals a user's session ID or authentication cookie to gain unauthorized access to a website or web application. When a user logs into a website or web application, a session ID or authentication cookie is often created and stored on the user's device. This session ID or authentication cookie is used by the website or web application to identify the user and grant them access to their account.<br><br>
+  
+      An attacker can intercept this session ID or authentication cookie using a variety of methods, such as packet sniffing, man-in-the-middle attacks, or cross-site scripting (XSS) attacks. Once the attacker has obtained the session ID or authentication cookie, they can use it to impersonate the user and gain access to their account, potentially accessing sensitive information or performing unauthorized actions on the user's behalf.<br><br>
+      
+      To protect against cookie theft, sidejacking, or session hijacking attacks, it's important to take the following precautions:<br><br>
+      
+      <ol>
+        <li>Use HTTPS whenever possible. HTTPS encrypts traffic between the user's device and the website or web application, making it much more difficult for attackers to intercept the session ID or authentication cookie.</li>
+        <li>Log out of websites or web applications when you're done using them. This will invalidate the session ID or authentication cookie and prevent attackers from using it to gain access to your account.</li>
+        <li>Avoid using public Wi-Fi networks to access sensitive websites or web applications. Public Wi-Fi networks are often unsecured, making it easy for attackers to intercept traffic and steal session IDs or authentication cookies.</li>
+        <li>Use two-factor authentication (2FA) whenever possible. 2FA adds an extra layer of security to your account by requiring a second form of authentication, such as a code sent to your phone, in addition to your username and password.</li>
+      </ol>
+      <br>
+      By taking these precautions, you can greatly reduce your risk of falling victim to a cookie theft, sidejacking, or session hijacking attack and protect your sensitive information.
+  </h3>
+  
+
+</div>
+    <br>
+    <div class="center">
+      <Nextbut url="/Common" size="50" />
+    </div>
+    <br>
+  </Rounded>
+</Layout>

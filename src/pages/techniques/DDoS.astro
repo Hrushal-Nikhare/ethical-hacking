@@ -1,0 +1,65 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Rounded from "../../components/Rounded.astro";
+import Nextbut from "../../components/nextbut.astro";
+---
+
+<style>
+  .center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  .content {
+    padding: 1rem;
+  }
+</style>
+<Layout title="DDos">
+  <Rounded>
+<div class="content">
+
+  <h1>DDoS Attacks:</h1>
+  <br />
+  <h3>
+      A Distributed Denial of Service (DDoS) attack is a type of cyber attack where an attacker tries to disrupt the normal traffic of a targeted server, service, or network by overwhelming it with a flood of internet traffic.<br><br>
+  
+      In a typical DDoS attack, the attacker uses a network of compromised computers, known as a botnet, to send a large amount of traffic to the target. The botnet can be made up of thousands or even millions of devices, which can include computers, servers, and Internet of Things (IoT) devices that have been infected with malware.<br><br>
+      
+      DDoS attacks can take many different forms, such as a volumetric attack that floods the target with a large amount of traffic, or an application-layer attack that specifically targets vulnerabilities in the targeted application or service. DDoS attacks can be difficult to defend against because the traffic can appear to be legitimate, making it hard to distinguish between legitimate traffic and malicious traffic.<br><br>
+      
+      The impact of a successful DDoS attack can be severe, as it can lead to slow response times or complete downtime for the targeted service or website. This can result in lost revenue, damage to reputation, and a loss of trust from customers and users.<br><br>
+      
+      To defend against DDoS attacks, organizations can take a number of steps, such as:
+      
+      <ol>
+        <li>Deploying anti-DDoS technology, such as firewalls, intrusion prevention systems, and web application firewalls, that can identify and block malicious traffic.</li>
+        <li>Monitoring network traffic and looking for unusual patterns or spikes in traffic volume.</li>
+        <li>Ensuring that all software and systems are up to date with the latest security patches and updates to prevent attackers from exploiting known vulnerabilities.</li>
+        <li>Using a content delivery network (CDN) or cloud-based DDoS protection service to distribute traffic across multiple servers and prevent a single point of failure.</li>
+        <li>Creating an incident response plan that outlines the steps to be taken in the event of a DDoS attack, including who is responsible for what actions and how to communicate with stakeholders.</li>
+      </ol>
+      <br>
+      By taking these steps, organizations can reduce their risk of falling victim to a DDoS attack and minimize the impact of any attack that does occur.
+  </h3>
+  
+
+</div>
+    <br>
+    <div class="center">
+      <Nextbut url="/Common" size="50" />
+    </div>
+    <br>
+  </Rounded>
+</Layout>

@@ -1,0 +1,54 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Rounded from "../../components/Rounded.astro";
+import Nextbut from "../../components/nextbut.astro";
+---
+
+<style>
+  .center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  .content {
+    padding: 1rem;
+  }
+</style>
+<Layout title="Macro Malware">
+  <Rounded>
+<div class="content">
+
+  <h1>Macro Malware in Documents:</h1>
+  <br />
+  <h3>
+  Macro malware is a type of malicious software that is embedded in a document, such as a Microsoft Word or Excel file, and uses macros to execute malicious code on the victim's computer. Macros are small programs that automate repetitive tasks in a document, such as formatting text or performing calculations.<br><br>
+  In a macro malware attack, the victim is typically tricked into downloading and opening an infected document, often through a phishing email or a malicious website. When the victim opens the document, the macro code is automatically executed, allowing the malware to install itself on the victim's computer and carry out malicious activities, such as stealing sensitive information or taking control of the victim's system.<br><br>
+  
+  Macro malware is particularly dangerous because it can easily bypass traditional antivirus software and other security measures, as the macros are executed within the trusted environment of the document application. In addition, many users are not aware of the risks posed by macros and may unwittingly enable them when prompted.<br><br>
+  
+  To protect against macro malware attacks, users should be cautious when opening email attachments or downloading documents from unknown sources. They should also disable macros in their document applications, such as Microsoft Word and Excel, unless they are absolutely necessary for their work. In addition, users should keep their antivirus software and operating system up to date with the latest security patches and updates.<br><br>
+  
+  In summary, macro malware in documents is a serious threat that can result in the theft of sensitive information or the compromise of a victim's system. By following best practices for email and document security, users can greatly reduce their risk of falling victim to a macro malware attack.
+  
+  </h3>
+
+</div>
+    <br>
+    <div class="center">
+      <Nextbut url="/Common" size="50" />
+    </div>
+    <br>
+  </Rounded>
+</Layout>

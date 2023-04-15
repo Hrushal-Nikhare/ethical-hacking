@@ -1,0 +1,51 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Rounded from "../../components/Rounded.astro";
+import Nextbut from "../../components/nextbut.astro";
+---
+
+<style>
+  .center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  .content {
+    padding: 1rem;
+  }
+</style>
+<Layout title="Bait and Switch">
+  <Rounded>
+<div class="content">
+    <h1>Bait and Switch:</h1>
+    <br />
+    <h3>
+    Bait and switch is a deceptive sales tactic that involves advertising a product or service at an attractive price or with desirable features, only to attempt to sell the customer a different, usually more expensive product or service instead. The bait is the initial offer that is used to attract customers, while the switch is the attempt to persuade the customer to purchase something else.<br><br>
+    Bait and switch can take many forms, but the underlying strategy is the same: to get the customer interested in a product or service by offering something appealing, and then try to upsell them to a more expensive option. This can be done in a number of ways, such as advertising a product as being on sale when it's actually not, advertising a product with a specific feature that turns out not to be available, or advertising a product at a certain price point only to reveal hidden fees or add-ons that increase the overall price.<br><br>
+    
+    Bait and switch is considered to be a deceptive and unethical practice that can harm consumer trust and lead to dissatisfaction with a brand or company. Customers who feel deceived or misled may be less likely to do business with the company in the future, and may also share their negative experiences with others, further damaging the company's reputation.<br><br>
+    
+    To protect themselves from falling victim to bait and switch tactics, consumers should carefully review the terms and conditions of any offers before making a purchase. They should also be wary of any unexpected fees or charges that may be added to the advertised price. If a customer suspects that a company is engaging in bait and switch tactics, they can report it to their local consumer protection agency or the Federal Trade Commission (FTC) for investigation.<br><br>
+    
+    </h3>
+
+</div>
+    <br>
+    <div class="center">
+      <Nextbut url="/Common" size="50" />
+    </div>
+    <br>
+  </Rounded>
+</Layout>
