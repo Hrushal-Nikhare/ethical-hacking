@@ -1,0 +1,64 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Rounded from "../components/Rounded.astro";
+import Nextbut from "../components/nextbut.astro";
+---
+
+<style>
+  .center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  hgroup {
+    text-align: center;
+  }
+  li {
+    padding: 0.5rem;
+  }
+</style>
+
+<Layout title="Common Techinques">
+  <Rounded>
+    <div class="text">
+      <hgroup>
+        <h1>Common Penetration Techinques:</h1>
+        <p>Click on each one to know more</p>
+      </hgroup>
+      <ul>
+        <li><a href="/techniques/Fake-Wap">Fake WAP</a></li>
+        <li>Bait and switch</li>
+        <li>Credential reuse</li>
+        <li>SQL injection</li>
+        <li>Browser locker</li>
+        <li>Macro malware in documents</li>
+        <li>Cookie theft / sidejacking / session hijacking</li>
+        <li>IoT attacks</li>
+        <li>DDoS attacks</li>
+        <li>Phishing</li>
+        <li>Clickjacking/UI redress</li>
+        <li>Man-in-the-middle attack</li>
+        <li>Cross-site scripting</li>
+        <li>DNS spoofing</li>
+        <li>Watering hole attack</li>
+        <li>Keylogger attack</li>
+        <li>Brute force attack</li>
+        <li>Dictionary attack</li>
+      </ul>
+      <div class="center">
+        <Nextbut url="/Prevention" size="50" />
+      </div>
+    </div>
+  </Rounded>
+</Layout>

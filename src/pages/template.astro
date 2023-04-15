@@ -1,0 +1,36 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Rounded from "../components/Rounded.astro";
+import Nextbut from "../components/nextbut.astro";
+---
+
+<style>
+  .center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1,h3{
+    text-align: center;
+  }
+</style>
+<Layout title="Prevention">
+  <Rounded>
+    <h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ratione
+      laboriosam corrupti cum excepturi sequi placeat eius rem voluptate
+      accusamus sed autem aspernatur culpa praesentium soluta quod pariatur,
+      ullam et.
+    </h1>
+    <br>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nihil obcaecati veritatis perspiciatis iusto illo? Ducimus iure sit distinctio natus numquam dignissimos, adipisci laboriosam aliquam debitis ipsa voluptatem, architecto minus?</h3>
+    <br>
+    <div class="center">
+      <Nextbut url="/" size="50" />
+    </div>
+    <br>
+  </Rounded>
+</Layout>
