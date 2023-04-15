@@ -2,7 +2,7 @@
 import "../styles/reset.css";
 import Header from "../components/header.astro";
 export interface Props {
-  title: string;
+  title2: string;
 }
 
 const { title2 } = Astro.props;
@@ -80,6 +80,7 @@ const image = 'https://i.postimg.cc/Qxfr6fQG/thumbnail.png';
       import { inject } from '@vercel/analytics';
  
     inject();
+    document.title = "{title2}"
     </script>
   </body>
 </html>
