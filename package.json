@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@astropub/icons": "^0.2.0",
+    "@swup/body-class-plugin": "^2.0.1",
+    "@swup/head-plugin": "^1.3.0",
     "@swup/preload-plugin": "^2.1.0",
     "@swup/scripts-plugin": "^1.1.0",
     "@swup/slide-theme": "^1.0.5",

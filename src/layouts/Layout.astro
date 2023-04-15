@@ -33,14 +33,15 @@ const { title } = Astro.props;
     </div>
     <script>
       import Swup from "swup";
-      import SwupScriptsPlugin from '@swup/scripts-plugin';
-      // import SwupPreloadPlugin from "@swup/preload-plugin";
+
+      import SwupPreloadPlugin from "@swup/preload-plugin";
+      import SwupHeadPlugin from "@swup/head-plugin";
       import SwupSlideTheme from "@swup/slide-theme";
       const swup = new Swup({
         plugins: [
           new SwupSlideTheme({ reversed: true }),
-          // new SwupPreloadPlugin(),
-          new SwupScriptsPlugin(),
+          new SwupPreloadPlugin(),
+          new SwupHeadPlugin(),
         ],
       });
     </script>
