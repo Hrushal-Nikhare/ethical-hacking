@@ -1,0 +1,52 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Rounded from "../components/Rounded.astro";
+import Nextbut from "../components/nextbut.astro";
+---
+
+<style>
+  .center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  .content {
+    padding: 1rem;
+  }
+  li{
+    font-size: 20px;
+  }
+</style>
+<Layout title="End">
+  <Rounded>
+<div class="content">
+
+    <h1>Thank You for Prioritizing Your Privacy and Security!</h1>
+    <br>
+    <h3>It is more important than ever to take proactive steps to protect yourself and your organization from potential cyber attacks. By staying informed and implementing best practices for online security, you can greatly reduce the risk of falling victim to an attack.</h3>
+    <h3>Remember, cyber attacks can happen to anyone, but by taking proactive steps and staying vigilant, you can greatly reduce your risk. Please feel free to share this resource with others who may benefit from it.</h3>
+    <h3>Stay safe and secure!</h3>
+
+      
+   
+</div>
+    <br>
+    <div class="center">
+        <h3>To Start</h3>
+      <Nextbut url="/" size="50" />
+    </div>
+    <br>
+  </Rounded>
+</Layout>

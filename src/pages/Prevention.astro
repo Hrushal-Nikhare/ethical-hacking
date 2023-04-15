@@ -1,13 +1,55 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Nextbut from "../components/nextbut.astro";
 import Rounded from "../components/Rounded.astro";
+import Nextbut from "../components/nextbut.astro";
 ---
 
+<style>
+  .center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  .content {
+    padding: 1rem;
+  }
+  li{
+    font-size: 20px;
+  }
+</style>
 <Layout title="Prevention">
-    <Rounded>
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ratione laboriosam corrupti cum excepturi sequi placeat eius rem voluptate accusamus sed autem aspernatur culpa praesentium soluta quod pariatur, ullam et.</h1>
-        <Nextbut url="/" size="50">
-        </Nextbut>
-    </Rounded>
+  <Rounded>
+<div class="content">
+
+    <h1>Effective Methods to Protect Against Different Types of Cyber Attacks:</h1>
+    <ul>
+        <li><strong>Use Strong Passwords:</strong> One of the easiest ways to protect against different types of attacks is to use strong and unique passwords for all your online accounts. Make sure your password is at least 8-12 characters long and includes a mix of upper and lower case letters, numbers, and special characters.</li>
+        <li><strong>Use Two-Factor Authentication:</strong> Two-factor authentication adds an extra layer of security to your online accounts by requiring you to provide a second form of verification, such as a fingerprint, a code sent to your mobile phone, or a hardware token, in addition to your password.</li>
+        <li><strong>Keep Your Software Up-to-Date:</strong> One of the easiest ways for attackers to gain access to your system is through vulnerabilities in outdated software. Make sure to install software updates and patches as soon as they become available.</li>
+        <li><strong>Use Antivirus and Antimalware Software:</strong> Install reputable antivirus and antimalware software on all your devices and keep it up-to-date to protect against malware, viruses, and other types of attacks.</li>
+        <li><strong>Avoid Clicking on Suspicious Links:</strong> Be cautious when clicking on links in emails, social media, or other online sources. Verify the link's authenticity before clicking on it, and only download files or click on links from reputable sources.</li>
+        <li><strong>Use a Virtual Private Network (VPN):</strong> A VPN encrypts your internet traffic and protects your online activity from prying eyes. Use a VPN when connecting to public Wi-Fi networks, or when you need to access sensitive information over the internet.</li>
+        <li><strong>Be Cautious When Using Public Wi-Fi:</strong> Public Wi-Fi networks are often unsecured and can be easily intercepted by attackers. Avoid accessing sensitive information when connected to public Wi-Fi networks, and use a VPN if you must access sensitive information over the internet.</li>
+        <li><strong>Use a Firewall:</strong> A firewall can help block unauthorized access to your computer or network by filtering incoming and outgoing traffic. Make sure to turn on the built-in firewall on your computer and/or install a reputable firewall software.</li>
+        <li><strong>Regularly Backup Your Data:</strong> Make regular backups of your important data and store them in a secure location, either on an external hard drive or on cloud-based storage. This can help you recover from data loss due to a cyber attack or hardware failure.</li>
+    </ul>
+</div>
+    <br>
+    <div class="center">
+      <Nextbut url="/End" size="50" />
+    </div>
+    <br>
+  </Rounded>
 </Layout>
