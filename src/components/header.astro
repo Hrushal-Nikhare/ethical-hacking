@@ -158,20 +158,3 @@ import * as Icon from "@astropub/icons";
 </div>
 <div class="buffer"></div>
 
-<script>
-  const hamburgerMenu = document.querySelector(".hamburger-menu");
-  const sidebar = document.querySelector("#sidebar");
-  const cross = document.querySelector(".cross");
-    const buffer = document.querySelector(".buffer");
-
-  hamburgerMenu.addEventListener("click", () => {
-    
-    sidebar.classList.toggle("slide-in-left");
-    buffer.style.display = "block";
-  });
-
-  cross.addEventListener("click", () => {
-    sidebar.classList.toggle("slide-in-left");
-    buffer.style.display = "none";
-  });
-</script>

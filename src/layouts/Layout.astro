@@ -44,6 +44,33 @@ const { title } = Astro.props;
           new SwupHeadPlugin(),
         ],
       });
+
+      // Nav bar init
+      function init() {
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const sidebar = document.querySelector("#sidebar");
+        const cross = document.querySelector(".cross");
+        const buffer = document.querySelector(".buffer");
+
+        hamburgerMenu.addEventListener("click", () => {
+          sidebar.classList.toggle("slide-in-left");
+          buffer.style.display = "block";
+        });
+
+        cross.addEventListener("click", () => {
+          sidebar.classList.toggle("slide-in-left");
+          buffer.style.display = "none";
+        });
+      }
+      
+      if (document.readyState === "complete") {
+        init();
+      } else {
+        document.addEventListener("DOMContentLoaded", () => init());
+      }
+
+      swup.on("contentReplaced", init);
+
     </script>
   </body>
 </html>
