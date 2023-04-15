@@ -2,13 +2,13 @@
 import "../styles/reset.css";
 import Header from "../components/header.astro";
 export interface Props {
-  title2: string;
+  title: string;
 }
 
-const { title2 } = Astro.props;
+const { title } = Astro.props;
 
 import OpenGraphMeta from '../components/OpenGraphMeta.astro';
-const title = 'Ethical Hacking';
+const title2 = 'Ethical Hacking';
 const description = 'Visit This webpage to learn more about ways to protect yourself from cyber attacks.';
 const url = 'https://ethical-hacking.hrushalnikhare.xyz/';
 const image = 'https://i.postimg.cc/Qxfr6fQG/thumbnail.png';
@@ -23,9 +23,9 @@ const image = 'https://i.postimg.cc/Qxfr6fQG/thumbnail.png';
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <OpenGraphMeta title={title} description={description} url={url} image={image} />
+    <OpenGraphMeta title={title2} description={description} url={url} image={image} />
     <meta name="generator" content={Astro.generator} />
-    <title>{title2}</title>
+    <title>{title}</title>
     <style>
       #swup {
         width: 100%;
@@ -80,7 +80,7 @@ const image = 'https://i.postimg.cc/Qxfr6fQG/thumbnail.png';
       import { inject } from '@vercel/analytics';
  
     inject();
-    document.title = "{title2}"
+    document.title = {title}
     </script>
   </body>
 </html>
