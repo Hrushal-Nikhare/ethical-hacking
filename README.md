@@ -1,4 +1,4 @@
 # Sike
 
 ## To Do:
-- Alot
+- Not Alot
