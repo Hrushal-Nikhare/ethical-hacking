@@ -1,0 +1,61 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Rounded from "../../components/Rounded.astro";
+import Nextbut from "../../components/nextbut.astro";
+---
+
+<style>
+  .center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  .content {
+    padding: 1rem;
+  }
+</style>
+<Layout title="Keylogger attack">
+  <Rounded>
+<div class="content">
+
+  <h1>Keylogger Attack:</h1>
+  <br />
+  <h3>
+      A keylogger attack is a type of cyber attack where an attacker secretly records keystrokes made on a computer keyboard. Keyloggers can be either hardware or software-based, and they can be used for both legitimate and malicious purposes. In the context of a cyber attack, keyloggers are used to steal sensitive information, such as login credentials, credit card numbers, or other personal data, that is entered by the user on the compromised device.<br><br>
+
+  Keyloggers can be installed on a device in a number of ways, including through phishing emails, malware, or physical access to the device. Once installed, the keylogger records all keystrokes made on the keyboard, including passwords and other sensitive information. The attacker can then use this information to gain unauthorized access to the user's accounts, steal their identity, or conduct financial fraud.<br><br>
+  
+  One of the most concerning aspects of keylogger attacks is that users often have no idea they have been compromised. Keyloggers can run in the background of a device without the user's knowledge or consent, making it difficult to detect their presence. This is why it's important to take steps to protect yourself from keylogger attacks.<br><br>
+  
+  To prevent keylogger attacks, here are some best practices you can follow:<br>
+  
+  <ol>
+    <li>Use anti-malware software and keep it up to date. Anti-malware software can detect and remove keyloggers and other types of malware from your device.</li>
+    <li>Be cautious when opening email attachments or clicking on links from unknown senders. Phishing emails often contain malware that can install keyloggers on your device.</li>
+    <li>Avoid using public computers or Wi-Fi networks for sensitive transactions, such as online banking or shopping. Public devices and networks may be compromised with keyloggers or other types of malware.</li>
+    <li>Consider using a virtual keyboard or a password manager. Virtual keyboards use mouse clicks instead of keyboard strokes to enter information, which can prevent keyloggers from recording your keystrokes. Password managers can securely store your login credentials and automatically enter them for you, reducing the need for manual input on the keyboard.</li>
+  </ol>
+  <br>
+  By following these best practices, you can greatly reduce your risk of falling victim to a keylogger attack and protect your personal and sensitive data.
+  </h3>
+
+</div>
+    <br>
+    <div class="center">
+      <Nextbut url="/Common" size="50" />
+    </div>
+    <br>
+  </Rounded>
+</Layout>

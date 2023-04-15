@@ -1,0 +1,59 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Rounded from "../../components/Rounded.astro";
+import Nextbut from "../../components/nextbut.astro";
+---
+
+<style>
+  .center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  .content {
+    padding: 1rem;
+  }
+</style>
+<Layout title="Brute Force">
+  <Rounded>
+<div class="content">
+
+  <h1>Brute Force Attack:</h1>
+  <br />
+  <h3>
+      A Brute Force Attack is a type of cyber attack in which an attacker tries to guess a password or encryption key by trying every possible combination until the correct one is found. This type of attack can be used to gain unauthorized access to systems, steal sensitive data, or compromise online accounts.<br><br>
+
+  In a Brute Force Attack, the attacker uses automated software or scripts to try every possible combination of characters until the correct password or encryption key is found. This can take a very long time, especially if the password is complex or the encryption key is long. However, with enough time and computing power, even strong passwords can be cracked through a Brute Force Attack.<br><br>
+  
+  There are several ways to protect yourself against Brute Force Attacks:
+  
+  <ol>
+    <li>Use strong passwords that are difficult to guess. A strong password should be at least 12 characters long and include a mix of uppercase and lowercase letters, numbers, and special characters.</li>
+    <li>Use two-factor authentication (2FA) whenever possible. This adds an extra layer of security to your accounts by requiring a second form of authentication, such as a code sent to your phone or a fingerprint scan, in addition to your password.</li>
+    <li>Limit the number of login attempts allowed. Many systems allow you to set a limit on the number of login attempts before the account is locked or suspended. This can help prevent attackers from trying an unlimited number of passwords.</li>
+    <li>Use a password manager to generate and store strong, unique passwords for each of your accounts. This can make it much easier to use strong passwords without having to remember them all.</li>
+  </ol>
+  <br>
+  By following these best practices, you can greatly reduce your risk of falling victim to a Brute Force Attack and keep your personal and sensitive data safe and secure.
+</h3>
+
+</div>
+    <br>
+    <div class="center">
+      <Nextbut url="/Common" size="50" />
+    </div>
+    <br>
+  </Rounded>
+</Layout>

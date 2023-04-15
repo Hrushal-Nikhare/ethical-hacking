@@ -1,0 +1,61 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Rounded from "../../components/Rounded.astro";
+import Nextbut from "../../components/nextbut.astro";
+---
+
+<style>
+  .center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  .content {
+    padding: 1rem;
+  }
+</style>
+<Layout title="Clickjacking/UI redress">
+  <Rounded>
+<div class="content">
+
+  <h1>Clickjacking/UI Redress:</h1>
+  <br>
+  <h3>
+  Clickjacking, also known as User Interface (UI) Redress attack, is a type of cyber attack that tricks a user into clicking on a malicious link or button disguised as a legitimate one. The attacker usually creates a fake web page or modifies an existing one, hiding the malicious element underneath a transparent layer, so the user unknowingly clicks on the hidden element, thinking it is part of the original page.<br><br>
+  
+  The attacker can use clickjacking to steal sensitive information, install malware, or perform other malicious activities. For example, they can use clickjacking to trick the user into giving their login credentials or credit card details. In some cases, clickjacking can also be used to hijack the user's webcam or microphone.<br><br>
+  
+  One of the most common examples of clickjacking is the "Likejacking" attack, where an attacker creates a fake Facebook button on a webpage that when clicked, unknowingly posts a message on the user's Facebook page.<br><br>
+  
+  To prevent clickjacking attacks, you can take the following measures:<br><br>
+  
+  <ul>
+    <li>Keep your browser updated with the latest security patches.</li>
+    <li>Use a browser extension like NoScript to block clickjacking attacks.</li>
+    <li>Be cautious while clicking on links or buttons on unfamiliar websites.</li>
+    <li>Avoid visiting untrustworthy websites or clicking on suspicious links.</li>
+    <li>Check the URL of the website before entering sensitive information or performing any financial transaction.</li>
+  </ul>
+  </h3>
+  
+
+</div>
+    <br>
+    <div class="center">
+      <Nextbut url="/Common" size="50" />
+    </div>
+    <br>
+  </Rounded>
+</Layout>

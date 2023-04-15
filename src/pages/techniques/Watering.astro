@@ -1,0 +1,59 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Rounded from "../../components/Rounded.astro";
+import Nextbut from "../../components/nextbut.astro";
+---
+
+<style>
+  .center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  .content {
+    padding: 1rem;
+  }
+</style>
+<Layout title="Watering">
+  <Rounded>
+<div class="content">
+
+  <h1>Watering hole attack:</h1>
+  <br />
+  <h3>A watering hole attack is a type of cyber attack in which an attacker targets a specific group of users by infecting websites that the group is likely to visit. The attacker typically looks for websites that are frequently visited by the targeted group, such as industry-specific forums, social media sites, or news sites.<br><br>
+  The attacker then infects the targeted websites with malware, such as a virus, trojan horse, or ransomware. When a member of the targeted group visits the infected website, their computer becomes infected with the malware. The attacker can then use the malware to steal sensitive information, such as login credentials, credit card numbers, or other personal data, that the user enters while browsing the infected site.<br><br>
+  
+  One of the main advantages of a watering hole attack is that it allows the attacker to target a specific group of users, such as employees of a particular company or members of a political group. By infecting websites that the targeted group is likely to visit, the attacker can gain access to sensitive information and use it for malicious purposes.<br><br>
+  
+  To protect yourself from a watering hole attack, there are several best practices you can follow:
+  
+  <ol>
+    <li>Keep your software up to date with the latest security patches and updates. This can help prevent vulnerabilities that attackers can exploit.</li>
+    <li>Use a reputable antivirus and anti-malware software to detect and block potential threats.</li>
+    <li>Avoid visiting unfamiliar websites, especially those that may be of interest to attackers.</li>
+    <li>Use a virtual private network (VPN) to encrypt your internet traffic and protect your data. A VPN creates a secure, encrypted tunnel between your device and the internet, making it much more difficult for attackers to intercept your data.</li>
+    <li>Be cautious when clicking on links or downloading files from unfamiliar sources.</li>
+  </ol>
+  <br>
+  By following these best practices, you can greatly reduce your risk of falling victim to a watering hole attack and protect your personal and sensitive data.</h3>
+
+</div>
+    <br>
+    <div class="center">
+      <Nextbut url="/Common" size="50" />
+    </div>
+    <br>
+  </Rounded>
+</Layout>

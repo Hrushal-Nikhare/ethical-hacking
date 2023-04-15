@@ -1,0 +1,67 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Rounded from "../../components/Rounded.astro";
+import Nextbut from "../../components/nextbut.astro";
+---
+
+<style>
+  .center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  .content {
+    padding: 1rem;
+  }
+</style>
+<Layout title="Phishing">
+  <Rounded>
+<div class="content">
+
+  <h1>Phishing:</h1>
+  <br />
+  <h3>
+      Phishing is a type of cyber attack where an attacker sends fraudulent messages or emails to trick individuals into providing sensitive information, such as login credentials, credit card numbers, or other personal data. The attacker can then use this information for malicious purposes, such as stealing the victim's identity, conducting financial fraud, or launching further attacks.<br><br>
+      
+      In a typical phishing attack, the attacker will create a message or email that appears to be from a legitimate source, such as a bank, social media site, or online retailer. The message will often include a link or attachment that the victim is encouraged to click on or open. When the victim does so, they are taken to a fake website or document that looks like the real one, but is actually designed to steal their information.<br><br>
+      
+      Some common phishing techniques include:<br>
+      <ul>
+        <li>Spear phishing: targeting specific individuals or groups with personalized messages that appear to come from a trusted source</li>
+        <li>Whaling: targeting high-level executives or individuals with access to valuable information or assets</li>
+        <li>Smishing: using text messages to trick individuals into clicking on links or providing sensitive information</li>
+        <li>Vishing: using voice calls to trick individuals into providing sensitive information or performing actions that they would not normally do</li>
+      </ul>
+      <br>
+      To protect yourself from phishing attacks, here are some best practices you can follow:<br>
+      <ol>
+        <li>Be cautious of unsolicited messages or emails, especially if they ask for sensitive information or include urgent calls to action.</li>
+        <li>Verify the legitimacy of the sender and the message before clicking on any links or opening any attachments. Look for signs of fraud, such as misspelled words, suspicious email addresses or URLs, or requests for information that you would not normally provide.</li>
+        <li>Use security software, such as anti-virus or anti-phishing tools, to help detect and prevent phishing attacks.</li>
+        <li>Regularly update your software and operating system to patch any vulnerabilities that could be exploited by attackers.</li>
+        <li>Train yourself and your employees to recognize and report phishing attacks, and have a plan in place for responding to them.</li>
+      </ol>
+      By following these best practices, you can greatly reduce your risk of falling victim to a phishing attack and protect your personal and sensitive data.
+  </h3>
+  
+
+</div>
+    <br>
+    <div class="center">
+      <Nextbut url="/Common" size="50" />
+    </div>
+    <br>
+  </Rounded>
+</Layout>

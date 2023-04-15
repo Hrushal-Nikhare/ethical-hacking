@@ -1,0 +1,62 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Rounded from "../../components/Rounded.astro";
+import Nextbut from "../../components/nextbut.astro";
+---
+
+<style>
+  .center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  .content {
+    padding: 1rem;
+  }
+</style>
+<Layout title="DNS spoofing">
+  <Rounded>
+<div class="content">
+
+  <h1>DNS Spoofing:</h1>
+  <br />
+  <h3>
+  DNS spoofing, also known as DNS cache poisoning, is a type of cyber attack where an attacker modifies the domain name system (DNS) records on a compromised DNS server to redirect traffic to a malicious website or server. DNS is the protocol that translates domain names into IP addresses, allowing computers to connect to websites and other resources on the internet. By manipulating DNS records, an attacker can redirect traffic from legitimate websites to fake or malicious ones, leading to a variety of malicious activities.<br><br>
+  
+  In a DNS spoofing attack, the attacker exploits a vulnerability in the DNS system to replace legitimate DNS records with fraudulent ones. The attacker can then use these fraudulent records to redirect traffic from legitimate websites to malicious ones. This can be done by tricking users into visiting a fake website or by intercepting and redirecting traffic to a malicious server.<br><br>
+  
+  DNS spoofing can be used for a variety of malicious purposes, such as phishing attacks, malware distribution, or financial fraud. For example, an attacker could use DNS spoofing to redirect users to a fake banking website that looks legitimate but is designed to steal their login credentials and other personal information.<br><br>
+  
+  To prevent DNS spoofing attacks, it's important to take the following measures:<br>
+  
+  <ol>
+    <li>Use a reputable and secure DNS service. Avoid using public Wi-Fi networks or other unsecured networks that are more susceptible to DNS spoofing attacks.</li>
+    <li>Regularly update your operating system and software to ensure that you have the latest security patches.</li>
+    <li>Use strong and unique passwords for all your online accounts, and enable two-factor authentication whenever possible.</li>
+    <li>Be wary of suspicious emails, messages, and links that may be attempting to trick you into visiting a fake website.</li>
+  </ol>
+  <br>
+  By following these best practices, you can greatly reduce your risk of falling victim to a DNS spoofing attack and protect your personal and sensitive data.
+  </h3>
+  
+
+</div>
+    <br>
+    <div class="center">
+      <Nextbut url="/Common" size="50" />
+    </div>
+    <br>
+  </Rounded>
+</Layout>
